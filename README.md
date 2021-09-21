@@ -9,4 +9,4 @@ This repository contains my portfolio (created with React && Bootstrap):
 - taken courses
 - creative background
 
-Click this link to see my portfolio: 
+Click this link to see my portfolio: https://vadimgierko.github.io/frontend-developer-portfolio/
