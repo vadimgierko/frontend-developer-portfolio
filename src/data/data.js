@@ -12,19 +12,19 @@ const data = {
         },
         {
             name: "MIND-MAP-APP",
-            img: "img/template-mind-map-screen-vadim-gierko.png",
+            img: "img/mind-maps-app-screen-vadim-gierko.png",
             gp: "https://vadimgierko.github.io/MIND-MAP-APP/",
             repoUrl: "https://github.com/vadimgierko/MIND-MAP-APP",
             language: "JavaScript (p5.js, jQuery), Bootstrap, Firebase",
             description: "Mind Maps App is a very simple, intuitive and easy to use application for online mindmapping. With this app you can create & edit a mind map with keywords in any place around the core keyword/s (you can build really impressive multi-level structure of nested keywords), save a mind map as a project (for future edition) in your user's database and/or download your mind map as a PNG file with one click!"
         },
         {
-            name: "GitHub-Users-Search-App",
+            name: "GitHub-API-Users-Search-App",
             img: "img/github-user-search-app-screen-vadim-gierko.png",
-            gp: "https://vadimgierko.github.io/GitHub-Users-Search-App/",
-            repoUrl: "https://github.com/vadimgierko/GitHub-Users-Search-App",
+            gp: "https://vadimgierko.github.io/github-api-users-search-app/#/vadimgierko",
+            repoUrl: "https://github.com/vadimgierko/github-api-users-search-app",
             language: "JavaScript (React, fetch, API), Bootstrap",
-            description: "Simple GitHub Users Searching App. Input the correct user name and see his bio, profile image & open source projects descriptions linked to the github repositories."}
+            description: "Simple GitHub Users Searching App. Input the correct user name in input field or... add it after the slash in app's URL & see his bio, profile image & open source projects descriptions linked to the github repositories."}
             ,
         {
             name: "PixelDrawApp",
@@ -51,8 +51,6 @@ const data = {
             description: "This is the quiz about my hometown - Lublin - made using React and React-Bootstrap. Answer to the 12 questions and check out your knowledge about Lublin!"
         },
     ],
-    //socials: ["instagram", "facebook", "linkedin", "youtube", "github"],
-    //links: ["#", "#", "#", "#", "#"],
     page: `https://vadimgierko.com/`,
 };
 
