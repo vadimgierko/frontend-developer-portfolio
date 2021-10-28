@@ -8,18 +8,20 @@ import Courses from "./components/Courses";
 
 function App() {
   return (
-      <div className="container-fluid">
+      <div className="App">
           <Navbar />
-          <div className="row mb-3">
-              <Bio />
-              <About />
+          <div className="container">
+            <div className="row mb-3">
+                <Bio />
+                <About />
+            </div>
+            <Projects />
+            <Background />
+            <Courses />
+            <p className="text-center">
+              designed by <a href="https://github.com/vadimgierko" target="_blank" rel="noreferrer">Vadim Gierko</a> | 2021
+            </p>
           </div>
-          <Projects />
-          <Background />
-          <Courses />
-          <p className="text-center">
-            designed by <a href="https://github.com/vadimgierko" target="_blank" rel="noreferrer">Vadim Gierko</a> | 2021
-          </p>
       </div>
   );
 }
