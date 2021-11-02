@@ -1,19 +1,11 @@
 const courses = [
     {
-        name: "HTML/ CSS/ JS",
+        name: "HTML/ CSS/ JS/ jQuery",
         description: "I've started my front-end developer journey with learning HTML, CSS & JS basics with these online courses:",
         courses: [
             {
                 name: "Intro to HTML/CSS: Making webpages",
                 link: "https://www.khanacademy.org/computing/computer-programming/html-css"
-            },
-            {
-                name: "Intro to JS: Drawing & Animation with processing.js",
-                link: "https://www.khanacademy.org/computing/computer-programming/programming"
-            },
-            {
-                name: "Advanced JS: Games & Visualizations with processing.js",
-                link: "https://www.khanacademy.org/computing/computer-programming/programming-games-visualizations"
             },
             {
                 name: "HTML/JS: Making webpages interactive",
@@ -30,9 +22,17 @@ const courses = [
         ],
     },
     {
-        name: "ES6 & p5.js",
+        name: "JS/ Processing JS/ p5.js/ ES6",
         description: "After that I've got familiar with ES6 standard & switched from processing.js library (for animation & visualization) on p5.js thanks to this courses:",
         courses: [
+            {
+                name: "Intro to JS: Drawing & Animation with processing.js",
+                link: "https://www.khanacademy.org/computing/computer-programming/programming"
+            },
+            {
+                name: "Advanced JS: Games & Visualizations with processing.js",
+                link: "https://www.khanacademy.org/computing/computer-programming/programming-games-visualizations"
+            },
             {
                 name: "p5.js - a JavaScript library for creative coding",
                 link: "https://p5js.org/reference/"
@@ -44,7 +44,7 @@ const courses = [
         ],
     },
     {
-        name: "React",
+        name: "React / React Router",
         description: "Then React shown up and... I felt in love in its possibilities. It wasn't easy, but I've managed basics of React thanks to these sources:",
         courses: [
             {

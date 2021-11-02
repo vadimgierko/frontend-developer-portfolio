@@ -4,14 +4,20 @@ import data from "../data/data";
 import Aside from "./Aside";
 
 export default function Navbar() {
+
     const [windowSize, setWindowSize] = useState(window.innerWidth); //576
     const [showAside, setShowAside] = useState(false);
+
     window.addEventListener("resize", () => {
         setWindowSize(window.innerWidth);
     });
-    if (windowSize > 1300) {
+
+    if (windowSize > 1400) {
         return (
-            <div className="navbar bg-light navbar-light px-3" style={{position: "fixed", top: "0", left: "0", right: "0", zIndex: "1"}}>
+            <div
+                className="navbar bg-light navbar-light px-3"
+                style={{position: "fixed", top: "0", left: "0", right: "0", zIndex: "1"}}
+            >
                 <div className="container">
                     <div className="navbar-brand mb-0 col">
                         <span className="font-weight-bold text-secondary h3 me-3">Vadim Gierko</span>
@@ -34,19 +40,36 @@ export default function Navbar() {
                             rel="noreferrer"
                         ><i className={`bi bi-${social}`}></i></a>
                     )}
-                    <a href={data.page ? data.page : "#"} target="_blank" rel="noreferrer" className="nav-link text-reset mx-1" style={{cursor: "pointer"}}><i className="bi bi-globe"></i></a>
+                    <a
+                        href={data.page ? data.page : "#"}
+                        target="_blank"
+                        rel="noreferrer"
+                        className="nav-link text-reset mx-1"
+                        style={{cursor: "pointer"}}
+                    >
+                        <i className="bi bi-globe"></i>
+                    </a>
                 </div>
             </div>
         );
     } else {
         return (
             <div>
-                <div className="navbar bg-light px-3 rounded" style={{position: "fixed", top: "0", left: "0", right: "0", zIndex: "1"}}>
-                    <div className="navbar-brand mb-0 col">
-                        <span className="font-weight-bold text-secondary h5">Vadim Gierko</span>
-                        <span>{windowSize > 501 ? <small> front-end web developer portfolio</small> : null}</span>
+                <div
+                    className="navbar bg-light px-3 rounded"
+                    style={{position: "fixed", top: "0", left: "0", right: "0", zIndex: "1"}}
+                >
+                    <div className="container">
+                        <div className="navbar-brand mb-0 col">
+                            <span className="font-weight-bold text-secondary h5">Vadim Gierko</span>
+                            <span>{windowSize > 521 ? <small> front-end web developer portfolio</small> : null}</span>
+                        </div>
+                        <i
+                            className="bi bi-list mx-2 text-primary"
+                            style={{cursor: "pointer"}}
+                            onClick={() => setShowAside(!showAside)}
+                        ></i>
                     </div>
-                    <i className="bi bi-list mx-2 text-primary" style={{cursor: "pointer"}} onClick={() => setShowAside(!showAside)}></i>
                 </div>
                 {showAside ? <Aside onClick={() => setShowAside(false)} /> : null}
             </div>
