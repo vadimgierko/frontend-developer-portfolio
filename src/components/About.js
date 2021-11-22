@@ -2,11 +2,11 @@ export default function About() {
     return (
         <div className="col-md text-justify" id="about" style={{paddingTop: "70px"}}>
             
-            <p>Hi there! I'm a <strong>self-taught front-end developer with an artistic, blogging and musical background</strong>.</p>
+            <p>Hi there! I'm a <strong>self-taught front-end & React developer with an artistic, blogging and musical background</strong>.</p>
             <p>In my projects I usually use:</p>
             <ul>
                 <li><strong>JavaScript</strong> (ES6)</li>
-                <li><strong>React</strong> 17 (create-react-app)</li>
+                <li><strong>React</strong> 17</li>
                 <li><strong>React Router</strong> 5+ for dynamic routing</li>
                 <li><strong>Firebase</strong> 9 (database, storage & authorization for) which is a back-end for my fullstack apps</li>
                 <li><strong>Bootstrap</strong> 5.1 for RWD</li>

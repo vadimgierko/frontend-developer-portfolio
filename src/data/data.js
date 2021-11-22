@@ -3,6 +3,14 @@ const data = {
     links: ["https://github.com/vadimgierko", "https://pl.linkedin.com/in/vadimgierko"],
     projects: [
         {
+            name: "Blogging Platform",
+            img: "img/blogging-platform-vadim-gierko-screen.png",
+            gp: "https://vadimgierko.github.io/blogging-platform/",
+            repoUrl: "https://github.com/vadimgierko/blogging-platform",
+            language: "React, React-Context, React-Router, React-Markdown, Bootstrap, Bootswatch, Firebase (realtime database, security rules & authentication), GitHub Pages",
+            description: "Blogging Platform allows you to create & run your blog (or many blogs) for free after creating a free user account, write & edit your articles with simple & intuitive markdown text editor (which was also created by myself) & read published blogs without authentication. This is my newest, most complex & advanced responsive full-stack single-page real-world application, which supports all kinds of CRUD features, in which I have used all of my previous knowledge and skills in the field of front-end development (React, Bootstrap) and realtime database integration (Firebase).",
+        },
+        {
             name: "GitHub-API-Users-Search-App",
             img: "img/github-user-search-app-screen-vadim-gierko.png",
             gp: "https://vadimgierko.github.io/github-api-users-search-app/#/vadimgierko",
@@ -41,23 +49,7 @@ const data = {
             repoUrl: "https://github.com/vadimgierko/Quiz-about-Lublin",
             language: "React, React-Bootstrap",
             description: "This is the quiz about my hometown - Lublin - made using React and React-Bootstrap. Answer to the 12 questions and check out your knowledge about Lublin!"
-        },
-        {
-            name: "Blog",
-            img: "img/blog-app-screen-vadim-gierko.png",
-            gp: "https://vadimgierko.github.io/Blog/",
-            repoUrl: "https://github.com/vadimgierko/Blog",
-            language: "React, Bootstrap, Local Storage",
-            description: "Simple (and old) Blog app with edition features like adding, deleting & editing short posts with images + navbar settings (name of the blog, social media links & www) using local storage to store your content in your browser. (Updates: the new version of this app - Blogging Platform - with all CRUD features connected to realtime database (Firebase) & users authentication is almost ready!)"
-        },
-        {
-            name: "CMS (private repository)",
-            img: "img/vadim-gierko-developer-portfolio-screen.png",
-            gp: null,
-            repoUrl: null,
-            language: "Front-end (style & logic): React, Bootstrap; Back-end (storage, database, security rules & authentication): Firebase",
-            description: "My first full-stack Content Management System integrated with Firebase, which allows add/ delete/ edit sections & content (text & images) for connected web page template (also designed & programmed by me). You can start from a completely empty web page template & start adding sections in CMS, which will show up in main section & in header & navbar. No sections (names or types) are hardcoded - CMS reacts for a data it's fetched. The App works fine & and you can manage a content of a simple page, like this portfolio, but for a moment it's just a foundation for future development. This System will be used as a main CMS for my future web pages. PS. GitHub repository of this project isn't public ;-)",
-        },
+        }
     ],
     page: `https://vadimgierko.com/`,
 };
