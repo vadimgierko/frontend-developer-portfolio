@@ -43,6 +43,14 @@ const data = {
             description: "Live Markdown Text Editor lets you write text using markdown language & render it as an HTML. The feature can be (and will be) used as a text editor in my Blogging Platform App (my most advanced fullstack application which comes very soon) & many others apps."
         },
         {
+            name: "Old School 2D Racing Game",
+            img: "img/old-school-racing-game-p5-js-vadim-gierko-2.png",
+            gp: "https://vadimgierko.github.io/old-school-2d-racing-game/",
+            repoUrl: "https://github.com/vadimgierko/old-school-2d-racing-game",
+            language: "JavaScript, p5.js library, Bootstrap Icons",
+            description: "Old-school 2D racing game created in JavaScript using p5.js library. I've started to develop this game at the beggining of my programming journey, but... had not enough knowledge to finish it then. So now, after 10 months brake I've figured all bugs & problems out, so the game is finally completed! I love working with p5.js, which alows you to create animations like this in that game, and thanks to this library I've made my first steps in programming learning with Khan Academy online courses, so it was a pleasure to come back to old habbits after 10 months of working mainly with React & other technologies ;-) Car's design was inspired by drawing of my son! Enjoy!"
+        },
+        {
             name: "Quiz about Lublin",
             img: "img/quiz-about-lublin-screen-vadim-gierko.png",
             gp: "https://vadimgierko.github.io/Quiz-about-Lublin/",
