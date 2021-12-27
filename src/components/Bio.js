@@ -4,7 +4,7 @@ export default function Bio() {
             <div className="card">
                 <img className="card-img-top" src="img/vadim-gerko-zdjecie-cv.jpg" />
                 <div className="card-body">
-                    <p><strong>Hello, World!</strong> I'm a self-taught front-end developer with an artistic, blogging and musical background. My goal is to create tools that boost your creativity!</p>
+                    <p><strong>Hi there!</strong> I'm a self-taught JavaScript / React Developer building full-stack web apps that help people to push their (and mine) creativity & productivity to its limits!</p>
                     
                 </div>
                 <div className="card-footer">

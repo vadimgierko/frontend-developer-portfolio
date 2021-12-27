@@ -17,7 +17,7 @@ function App() {
             </div>
             <Projects />
             <Background />
-            <Courses />
+            {/*<Courses />*/}
             <hr />
             <p className="text-center">
               designed by <a href="https://github.com/vadimgierko" target="_blank" rel="noreferrer">Vadim Gierko</a> | 2021

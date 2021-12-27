@@ -4,7 +4,7 @@ import Project from "./Project";
 export default function Projects() {
     return (
         <div className="text-justify" id="projects" style={{paddingTop: "70px"}}>
-            <h1 className="text-center py-3">Projects</h1>
+            <h1 className="text-center py-3">Projects (public repositories)</h1>
             <hr />
             {data.projects.map((project, i) => 
                 <div key={"project" + i}>
