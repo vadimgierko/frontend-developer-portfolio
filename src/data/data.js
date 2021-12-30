@@ -16,7 +16,7 @@ const data = {
             gp: "https://vadimgierko.github.io/blogging-platform/",
             repoUrl: "https://github.com/vadimgierko/blogging-platform",
             language: "React, React Context, React Router, React Markdown, Bootstrap, Bootswatch, Firebase, gh-pages",
-            description: "This full-stack SPA allows you to create & run your blog (or many blogs) for free after creating a free user account, write & edit your articles with simple & intuitive markdown text editor (which was also created by myself) & read published blogs without authentication. This app & linky_notes app (see above) are my newest, most complex & advanced responsive full-stack single-page real-world applications, that support all kinds of CRUD features, in which I have used all of my previous knowledge and skills in the field of front-end development (React, Bootstrap) and realtime database & authentication integration (Firebase).",
+            description: "This full-stack SPA allows you to create & run your blog (or many blogs) for free after creating a free user account, write & edit your articles with simple & intuitive markdown text editor (which was also created by myself) & read published blogs without authentication. There is a small blog called 'My Programming Journey', where I published a few articles. This app & linky_notes app (see above) are my newest, most complex & advanced responsive full-stack single-page real-world applications, that support all kinds of CRUD features, in which I have used all of my previous knowledge and skills in the field of front-end development (React, React Router, Bootstrap) and realtime database & authentication integration (Firebase).",
         },
         {
             name: "GitHub-API-Users-Search-App",
