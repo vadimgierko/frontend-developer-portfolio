@@ -27,7 +27,7 @@ export default function Navbar() {
                     <a href="#about" className="mx-3 text-light" style={{textDecoration: "none"}}>About</a>
                     <a href="#projects" className="mx-3 text-light" style={{textDecoration: "none"}}><strong>Projects</strong></a>
                     <a
-                        href="https://vadimgierko.github.io/blogging-platform/#/blogs/my-programming-journey/summary-of-my-first-year-of-learning-web-development.-roadmap,-projects-and-tips-for-newbies"
+                        href="https://vadimgierko.github.io/blogging-platform/#/blogs/my-programming-journey/summary-of-my-first-year-of-learning-web-development-roadmap-projects-and-tips-for-newbies"
                         target="_blank"
                         rel="noreferrer"
                         className="mx-3 text-light"
