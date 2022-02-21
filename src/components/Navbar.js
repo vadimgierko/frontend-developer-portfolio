@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import colorizeText from "../functions/colorizeText";
-import data from "../data/data";
+import { LINKS } from "../data/LINKS";
 import Aside from "./Aside";
 
 export default function Navbar() {
@@ -71,20 +71,20 @@ export default function Navbar() {
 							(span) => span
 						)}
 					</a>
-					{data.socials.map((social, i) => (
+					{LINKS.socials.map((social) => (
 						<a
-							key={social}
-							href={data.links[i] ? data.links[i] : "#"}
+							key={social.type}
+							href={social.url ? social.url : "#"}
 							target="_blank"
 							className="nav-link text-light mx-1"
 							style={{ cursor: "pointer" }}
 							rel="noreferrer"
 						>
-							<i className={`bi bi-${social}`}></i>
+							<i className={`bi bi-${social.type}`}></i>
 						</a>
 					))}
 					<a
-						href={data.page ? data.page : "#"}
+						href={LINKS.page ? LINKS.page : "#"}
 						target="_blank"
 						rel="noreferrer"
 						className="nav-link text-light mx-1"

@@ -1,3 +1,6 @@
+import { TECHNOLOGIES } from "../data/TECHNOLOGIES";
+import { INTERESTS } from "../data/INTERESTS";
+
 export default function About() {
 	return (
 		<div
@@ -26,53 +29,15 @@ export default function About() {
 			</p>
 			<h2>Technologies, languages, tools & frameworks I use</h2>
 			<ul>
-				<li>
-					<strong>JavaScript</strong> (ES6)
-				</li>
-				<li>
-					<strong>React</strong> 17.0
-				</li>
-				<li>
-					<strong>React Router</strong> 5.2
-				</li>
-				<li>
-					<strong>Firebase</strong> 9.1 as BaaS
-				</li>
-				<li>
-					<strike>Redux</strike> <strong>Redux-like</strong> React
-					Context API + useReducer{" "}
-					<strong>state management pattern</strong>
-				</li>
-				<li>
-					<strong>Bootstrap</strong> 5.1
-				</li>
-				<li>
-					<strong>CSS3</strong> (<strong>Flexbox & Grid</strong>{" "}
-					Layouts)
-				</li>
-				<li>
-					<strong>p5.js</strong> (for visualisations or animations)
-				</li>
-				<li>
-					<strong>Github & GitHub Pages</strong>
-				</li>
-				<li>
-					<strong>jQuery</strong>
-				</li>
-				<li>
-					<strong>Atomic Design</strong> methodology for interface
-					design
-				</li>
+				{TECHNOLOGIES.map((technology, i) => (
+					<li key={"technology-" + i}>{technology}</li>
+				))}
 			</ul>
 			<h3>What else I am interested in</h3>
 			<ul>
-				<li>visual thinking (sketchnoting and mindmapping)</li>
-				<li>composing music (using GuitarPro 7.5)</li>
-				<li>
-					creative process management (I wrote an ebook & ran blog on
-					the topic)
-				</li>
-				<li>abstract & logical board games & sudoku</li>
+				{INTERESTS.map((interest, i) => (
+					<li key={"interest-" + i}>{interest}</li>
+				))}
 			</ul>
 		</div>
 	);
