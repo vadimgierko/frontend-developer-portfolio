@@ -1,30 +1,31 @@
-import './App.css';
-import Navbar from "./components/Navbar";
-import Bio from "./components/Bio";
-import About from "./components/About";
-import Projects from "./components/Projects";
-import Background from "./components/Background";
-import Courses from "./components/Courses";
+import "./App.css";
+import Navbar from "./components/organisms/Navbar";
+import About from "./components/pages/About";
+import Projects from "./components/pages/Projects";
+import Background from "./components/pages/Background";
+import Footer from "./components/organisms/Footer";
+import { useTheme } from "../src/hooks/useTheme";
+import ScrollToTop from "./components/atoms/ScrollToTop";
 
 function App() {
-  return (
-      <div className="App">
-          <Navbar />
-          <div className="container">
-            <div className="row mb-3">
-                <Bio />
-                <About />
-            </div>
-            <Projects />
-            <Background />
-            {/*<Courses />*/}
-            <hr />
-            <p className="text-center">
-              designed by <a href="https://github.com/vadimgierko" target="_blank" rel="noreferrer">Vadim Gierko</a> | 2021
-            </p>
-          </div>
-      </div>
-  );
+	const { theme } = useTheme();
+
+	return (
+		<div
+			className={`App bg-${theme} text-${
+				theme === "dark" ? "light" : "dark"
+			}`}
+		>
+			<Navbar />
+			<main className="container">
+				<About />
+				<Projects />
+				<Background />
+			</main>
+			<Footer />
+			<ScrollToTop />
+		</div>
+	);
 }
 
 export default App;
