@@ -1,138 +1,99 @@
 import React, { useState } from "react";
+import NavLink from "../atoms/navbar-atoms/NavLink";
+import SocialIconLink from "../atoms/navbar-atoms/SocialIconLink";
 import colorizeText from "../../functions/colorizeText";
 import { LINKS } from "../../data/LINKS";
-import Aside from "../Aside";
+
+const NAVLINKS = [
+	{
+		to: "#about",
+		text: "About",
+	},
+	{
+		to: "#projects",
+		text: "Projects",
+	},
+	{
+		to: "#background",
+		text: "Creative Background",
+	},
+	{
+		to: "https://vadimgierko.github.io/blogging-platform/#/blogs/my-programming-journey/summary-of-my-first-year-of-learning-web-development-roadmap-projects-and-tips-for-newbies",
+		text: "Blog",
+	},
+];
 
 export default function Navbar() {
-	const [windowSize, setWindowSize] = useState(window.innerWidth); //576
-	const [showAside, setShowAside] = useState(false);
+	const [isNavCollapsed, setIsNavCollapsed] = useState(true);
 
-	window.addEventListener("resize", () => {
-		setWindowSize(window.innerWidth);
-	});
+	const handleNavCollapse = () => {
+		setIsNavCollapsed(!isNavCollapsed);
+	};
 
-	if (windowSize > 1400) {
-		return (
-			<div
-				className="navbar bg-dark navbar-dark px-3"
-				style={{
-					position: "fixed",
-					top: "0",
-					left: "0",
-					right: "0",
-					zIndex: "1",
-				}}
-			>
-				<div className="container">
-					<div className="navbar-brand mb-0 col">
-						<span className="font-weight-bold text-light h3 me-3">
-							Vadim Gierko
-						</span>
-						<span className="text-muted">
-							react / firebase developer
-						</span>
-					</div>
+	return (
+		<nav className="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+			<div className="container">
+				<div>
 					<a
-						href="#"
-						className="mx-3 text-light"
-						style={{ textDecoration: "none" }}
+						className="navbar-brand font-weight-bold text-light h3"
+						to="#"
 					>
-						Home
-					</a>
-					<a
-						href="#about"
-						className="mx-3 text-light"
-						style={{ textDecoration: "none" }}
-					>
-						About
-					</a>
-					<a
-						href="#projects"
-						className="mx-3 text-light"
-						style={{ textDecoration: "none" }}
-					>
-						<strong>Projects</strong>
-					</a>
-					<a
-						href="https://vadimgierko.github.io/blogging-platform/#/blogs/my-programming-journey/summary-of-my-first-year-of-learning-web-development-roadmap-projects-and-tips-for-newbies"
-						target="_blank"
-						rel="noreferrer"
-						className="mx-3 text-light"
-						style={{ textDecoration: "none" }}
-					>
-						Blog
-					</a>
-					<a
-						href="#background"
-						className="mx-3"
-						style={{ textDecoration: "none" }}
-					>
-						{colorizeText("Creative Background").map(
-							(span) => span
-						)}
-					</a>
-					{LINKS.socials.map((social) => (
-						<a
-							key={social.type}
-							href={social.url ? social.url : "#"}
-							target="_blank"
-							className="nav-link text-light mx-1"
-							style={{ cursor: "pointer" }}
-							rel="noreferrer"
-						>
-							<i className={`bi bi-${social.type}`}></i>
-						</a>
-					))}
-					<a
-						href={LINKS.page ? LINKS.page : "#"}
-						target="_blank"
-						rel="noreferrer"
-						className="nav-link text-light mx-1"
-						style={{ cursor: "pointer" }}
-					>
-						<i className="bi bi-globe"></i>
+						Vadim Gierko
 					</a>
 				</div>
-			</div>
-		);
-	} else {
-		return (
-			<div>
-				<div
-					className="navbar bg-dark px-3"
-					style={{
-						position: "fixed",
-						top: "0",
-						left: "0",
-						right: "0",
-						zIndex: "1",
-					}}
+				<button
+					className="navbar-toggler collapsed"
+					type="button"
+					data-bs-toggle="collapse"
+					data-bs-target="#navbarColor01"
+					aria-controls="navbarColor01"
+					aria-expanded={isNavCollapsed ? true : false}
+					aria-label="Toggle navigation"
+					onClick={handleNavCollapse}
 				>
-					<div className="container">
-						<div className="navbar-brand mb-0 col">
-							<span className="font-weight-bold text-light h5">
-								Vadim Gierko
-							</span>
-							<span className="text-muted ms-2">
-								{windowSize > 521 ? (
-									<small>
-										{" "}
-										js / react developer portfolio
-									</small>
-								) : null}
-							</span>
-						</div>
-						<i
-							className="bi bi-list mx-2 text-light"
-							style={{ cursor: "pointer" }}
-							onClick={() => setShowAside(!showAside)}
-						></i>
-					</div>
+					<span className="navbar-toggler-icon"></span>
+				</button>
+				<div
+					className={`navbar-collapse ${
+						isNavCollapsed ? "collapse" : null
+					} `}
+					id="navbarColor01"
+				>
+					<ul className="navbar-nav me-auto">
+						{NAVLINKS.map((navLink, i) => (
+							<li key={"nav-item-" + i} className="nav-item">
+								<NavLink
+									to={navLink.to}
+									onClick={() => {
+										if (!isNavCollapsed) {
+											handleNavCollapse();
+										}
+									}}
+									text={navLink.text}
+								/>
+							</li>
+						))}
+					</ul>
+					<ul className="navbar-nav">
+						{LINKS.socials.map((social) => (
+							<li
+								key={"social-icon-link-" + social.type}
+								className="nav-item"
+							>
+								<SocialIconLink data={social} />
+							</li>
+						))}
+					</ul>
 				</div>
-				{showAside ? (
-					<Aside onClick={() => setShowAside(false)} />
-				) : null}
 			</div>
-		);
-	}
+		</nav>
+	);
 }
+
+/**
+ * ${
+						isNavCollapsed
+							? "collapse"
+							: null
+					} 
+ */
