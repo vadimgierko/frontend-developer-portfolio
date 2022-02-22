@@ -3,8 +3,12 @@ import Project from "../organisms/Project";
 
 export default function Projects() {
 	return (
-		<div className="projects-page text-justify" id="projects">
-			<h1 className="text-center py-3">Projects (public repositories)</h1>
+		<div
+			className="projects-page text-justify"
+			id="projects"
+			style={{ paddingTop: "70px" }}
+		>
+			<h1 className="text-center">Projects (public repositories)</h1>
 			<hr />
 			{PROJECTS.map((project, i) => (
 				<div key={"project" + i}>

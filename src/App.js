@@ -5,14 +5,10 @@ import Projects from "./components/pages/Projects";
 import Background from "./components/pages/Background";
 import Footer from "./components/organisms/Footer";
 import { useTheme } from "../src/hooks/useTheme";
-import { useEffect } from "react";
+import ScrollToTop from "./components/atoms/ScrollToTop";
 
 function App() {
 	const { theme } = useTheme();
-
-	useEffect(() => {
-		console.log("theme:", theme);
-	}, [theme]);
 
 	return (
 		<div
@@ -21,12 +17,13 @@ function App() {
 			}`}
 		>
 			<Navbar />
-			<main className="container" style={{ paddingTop: "70px" }}>
+			<main className="container">
 				<About />
 				<Projects />
 				<Background />
 			</main>
 			<Footer />
+			<ScrollToTop />
 		</div>
 	);
 }

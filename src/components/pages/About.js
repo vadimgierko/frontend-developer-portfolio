@@ -4,19 +4,23 @@ import Bio from "../organisms/Bio";
 
 export default function About() {
 	return (
-		<div className="about-page row mb-3" id="about">
+		<div
+			className="about-page row"
+			id="about"
+			style={{ paddingTop: "70px" }}
+		>
 			<section className="bio-section col-md-4">
 				<Bio />
 			</section>
-			<section className="about-section col-md text-justify">
-				<h1>Hello, World!</h1>
+			<section className="about-section col-md">
+				<h3>Hello, World!</h3>
 				<p>
 					My name is Vadim Gierko and I’m a{" "}
 					<strong>self-taught React / Firebase developer</strong> with
 					more than a year of non-commercial programming experience
 					&... an artistic, blogging and musical background.
 				</p>
-				<h2>What I love to develop</h2>
+				<h3>What I love to develop</h3>
 				<p>
 					I'm insanely excited to build complex <strong>SPA</strong>s
 					with <strong>React & Firebase</strong> (that's why I called
@@ -29,7 +33,7 @@ export default function About() {
 					the opportunity to feel like one 😆 and build in fact
 					full-stack apps.
 				</p>
-				<h2>Technologies, languages, tools & frameworks I use</h2>
+				<h3>Technologies, languages, tools & frameworks I use</h3>
 				<ul>
 					{TECHNOLOGIES.map((technology, i) => (
 						<li key={"technology-" + i}>{technology}</li>

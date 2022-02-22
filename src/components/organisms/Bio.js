@@ -4,7 +4,7 @@ export default function Bio() {
 	const { theme } = useTheme();
 
 	return (
-		<div className={`bio-card card bg-${theme}`}>
+		<div className={`bio-card card bg-${theme} mb-3`}>
 			<img
 				className="card-img-top"
 				src="img/vadim-gerko-zdjecie-cv.jpg"

@@ -1,13 +1,23 @@
 import { CREATIVE_ACTIVITIES } from "../../data/CREATIVE_ACTIVITIES";
 import colorizeText from "../../functions/colorizeText";
 import Activity from "../organisms/Activity";
+import { useTheme } from "../../hooks/useTheme";
 
 export default function Background() {
+	const { theme } = useTheme();
+
 	return (
-		<div id="background" className="creative-background-page">
+		<div
+			id="background"
+			className="creative-background-page"
+			style={{ paddingTop: "70px" }}
+		>
 			<header style={{ textAlign: "center" }}>
 				<h1>
-					{colorizeText("Creative Background").map((span) => span)}
+					{colorizeText(
+						"Creative Background",
+						theme === "dark" ? true : false
+					).map((span) => span)}
 				</h1>
 				<p>I wasn't born as a front-end developer. I am a creator.</p>
 				<p>

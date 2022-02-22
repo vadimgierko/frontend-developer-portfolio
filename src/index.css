@@ -7,3 +7,11 @@ body {
   padding: 0;
   margin-bottom: -15px;
 }
+
+.scroll-to-top {
+  z-index: 1;
+  color: grey;
+  position: fixed;
+  right: 3%;
+  bottom: 1%;
+}

@@ -16,7 +16,7 @@ export default function Activity({ activity }) {
 					<img
 						src={activity.imageSRC}
 						className="card-img-top img-fluid p-3"
-						alt="activity icon"
+						alt=""
 					/>
 				</div>
 				<div className="card-text col-md-8">

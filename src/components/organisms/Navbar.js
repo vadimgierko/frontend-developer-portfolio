@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import NavLink from "../atoms/navbar-atoms/NavLink";
 import SocialIconLink from "../atoms/navbar-atoms/SocialIconLink";
-import colorizeText from "../../functions/colorizeText";
 import { LINKS } from "../../data/LINKS";
 import { useTheme } from "../../hooks/useTheme";
 
@@ -39,14 +38,13 @@ export default function Navbar() {
 		>
 			<div className="container">
 				<div>
-					<a
+					<span
 						className={`navbar-brand font-weight-bold text-${
 							theme === "dark" ? "light" : "dark"
 						} h3`}
-						to="#"
 					>
 						Vadim Gierko
-					</a>
+					</span>
 				</div>
 				<button
 					className="navbar-toggler collapsed"
@@ -87,7 +85,14 @@ export default function Navbar() {
 								key={"social-icon-link-" + social.type}
 								className="nav-item"
 							>
-								<SocialIconLink data={social} />
+								<SocialIconLink
+									data={social}
+									onClick={() => {
+										if (!isNavCollapsed) {
+											handleNavCollapse();
+										}
+									}}
+								/>
 							</li>
 						))}
 						<li className="nav-item">
@@ -95,7 +100,12 @@ export default function Navbar() {
 								className={`bi bi-${
 									theme === "dark" ? "sun" : "moon"
 								} nav-link`}
-								onClick={() => switchTheme()}
+								onClick={() => {
+									switchTheme();
+									if (!isNavCollapsed) {
+										handleNavCollapse();
+									}
+								}}
 							></i>
 						</li>
 					</ul>
