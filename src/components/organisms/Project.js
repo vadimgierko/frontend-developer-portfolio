@@ -1,6 +1,6 @@
 export default function Project({ repoData, i }) {
 	return (
-		<div className="row mb-3">
+		<div className="project-section row mb-3">
 			{i === 0 || i % 2 === 0 ? (
 				<div className="col-md-6">
 					<a
@@ -12,6 +12,7 @@ export default function Project({ repoData, i }) {
 						<img
 							className="img-fluid border border-secondary"
 							src={repoData.img}
+							alt="project screenshot"
 						/>
 					</a>
 				</div>
@@ -93,6 +94,7 @@ export default function Project({ repoData, i }) {
 						<img
 							className="img-fluid border border-secondary"
 							src={repoData.img}
+							alt="project screenshot"
 						/>
 					</a>
 				</div>

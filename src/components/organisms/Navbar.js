@@ -1,7 +1,7 @@
 import React, { useState } from "react";
-import colorizeText from "../functions/colorizeText";
-import { LINKS } from "../data/LINKS";
-import Aside from "./Aside";
+import colorizeText from "../../functions/colorizeText";
+import { LINKS } from "../../data/LINKS";
+import Aside from "../Aside";
 
 export default function Navbar() {
 	const [windowSize, setWindowSize] = useState(window.innerWidth); //576

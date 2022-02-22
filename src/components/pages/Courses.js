@@ -1,12 +1,8 @@
-import courses from "../data/courses";
+import courses from "../../data/courses";
 
 export default function Courses() {
 	return (
-		<div
-			id="courses"
-			className="text-center"
-			style={{ paddingTop: "70px" }}
-		>
+		<div id="courses" className="courses-page text-center">
 			<h1 className="py-3">Taken Courses</h1>
 			<hr />
 			<div className="row">

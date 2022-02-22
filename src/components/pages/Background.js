@@ -1,10 +1,10 @@
-import { CREATIVE_ACTIVITIES } from "../data/CREATIVE_ACTIVITIES";
-import colorizeText from "../functions/colorizeText";
-import Activity from "./Activity";
+import { CREATIVE_ACTIVITIES } from "../../data/CREATIVE_ACTIVITIES";
+import colorizeText from "../../functions/colorizeText";
+import Activity from "../organisms/Activity";
 
 export default function Background() {
 	return (
-		<div id="background" style={{ paddingTop: "70px" }}>
+		<div id="background" className="creative-background-page">
 			<header style={{ textAlign: "center" }}>
 				<h1>
 					{colorizeText("Creative Background").map((span) => span)}
@@ -18,7 +18,12 @@ export default function Background() {
 			</header>
 			<div className="row">
 				{CREATIVE_ACTIVITIES.map((activity, i) => (
-					<Activity key={"activity" + i} activity={activity} />
+					<div
+						className="activity-section col-lg"
+						key={"activity" + i}
+					>
+						<Activity activity={activity} />
+					</div>
 				))}
 			</div>
 		</div>

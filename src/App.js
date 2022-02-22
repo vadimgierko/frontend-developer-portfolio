@@ -1,34 +1,20 @@
 import "./App.css";
-import Navbar from "./components/Navbar";
-import Bio from "./components/Bio";
-import About from "./components/About";
-import Projects from "./components/Projects";
-import Background from "./components/Background";
+import Navbar from "./components/organisms/Navbar";
+import About from "./components/pages/About";
+import Projects from "./components/pages/Projects";
+import Background from "./components/pages/Background";
+import Footer from "./components/organisms/Footer";
 
 function App() {
 	return (
 		<div className="App">
 			<Navbar />
-			<div className="container">
-				<div className="row mb-3">
-					<Bio />
-					<About />
-				</div>
+			<main className="container" style={{ paddingTop: "70px" }}>
+				<About />
 				<Projects />
 				<Background />
-				<hr />
-				<p className="text-center">
-					designed by{" "}
-					<a
-						href="https://github.com/vadimgierko"
-						target="_blank"
-						rel="noreferrer"
-					>
-						Vadim Gierko
-					</a>{" "}
-					&copy; 2021-2022
-				</p>
-			</div>
+			</main>
+			<Footer />
 		</div>
 	);
 }

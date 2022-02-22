@@ -1,13 +1,9 @@
-import { PROJECTS } from "../data/PROJECTS";
-import Project from "./Project";
+import { PROJECTS } from "../../data/PROJECTS";
+import Project from "../organisms/Project";
 
 export default function Projects() {
 	return (
-		<div
-			className="text-justify"
-			id="projects"
-			style={{ paddingTop: "70px" }}
-		>
+		<div className="projects-page text-justify" id="projects">
 			<h1 className="text-center py-3">Projects (public repositories)</h1>
 			<hr />
 			{PROJECTS.map((project, i) => (
