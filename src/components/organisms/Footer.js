@@ -1,6 +1,6 @@
 export default function Footer() {
 	return (
-		<footer>
+		<footer className="pb-1">
 			<hr />
 			<p className="text-center">
 				designed by{" "}

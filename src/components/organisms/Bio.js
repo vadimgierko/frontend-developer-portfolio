@@ -1,6 +1,10 @@
+import { useTheme } from "../../hooks/useTheme";
+
 export default function Bio() {
+	const { theme } = useTheme();
+
 	return (
-		<div className="bio-card card">
+		<div className={`bio-card card bg-${theme}`}>
 			<img
 				className="card-img-top"
 				src="img/vadim-gerko-zdjecie-cv.jpg"
@@ -14,9 +18,7 @@ export default function Bio() {
 					its limits! Check out my portfolio for more info & projects!
 				</p>
 			</div>
-			<div className="card-footer">
-				<p className="text-muted">Lublin, Poland</p>
-			</div>
+			<div className="card-footer text-muted">Lublin, Poland</div>
 		</div>
 	);
 }

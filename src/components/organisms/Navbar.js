@@ -3,6 +3,7 @@ import NavLink from "../atoms/navbar-atoms/NavLink";
 import SocialIconLink from "../atoms/navbar-atoms/SocialIconLink";
 import colorizeText from "../../functions/colorizeText";
 import { LINKS } from "../../data/LINKS";
+import { useTheme } from "../../hooks/useTheme";
 
 const NAVLINKS = [
 	{
@@ -24,6 +25,8 @@ const NAVLINKS = [
 ];
 
 export default function Navbar() {
+	const { theme, switchTheme } = useTheme();
+
 	const [isNavCollapsed, setIsNavCollapsed] = useState(true);
 
 	const handleNavCollapse = () => {
@@ -31,11 +34,15 @@ export default function Navbar() {
 	};
 
 	return (
-		<nav className="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+		<nav
+			className={`navbar navbar-expand-lg navbar-${theme} bg-${theme} fixed-top`}
+		>
 			<div className="container">
 				<div>
 					<a
-						className="navbar-brand font-weight-bold text-light h3"
+						className={`navbar-brand font-weight-bold text-${
+							theme === "dark" ? "light" : "dark"
+						} h3`}
 						to="#"
 					>
 						Vadim Gierko
@@ -83,17 +90,17 @@ export default function Navbar() {
 								<SocialIconLink data={social} />
 							</li>
 						))}
+						<li className="nav-item">
+							<i
+								className={`bi bi-${
+									theme === "dark" ? "sun" : "moon"
+								} nav-link`}
+								onClick={() => switchTheme()}
+							></i>
+						</li>
 					</ul>
 				</div>
 			</div>
 		</nav>
 	);
 }
-
-/**
- * ${
-						isNavCollapsed
-							? "collapse"
-							: null
-					} 
- */

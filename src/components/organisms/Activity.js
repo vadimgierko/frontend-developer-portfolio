@@ -1,6 +1,10 @@
+import { useTheme } from "../../hooks/useTheme";
+
 export default function Activity({ activity }) {
+	const { theme } = useTheme();
+
 	return (
-		<div className="activity-card card mb-3">
+		<div className={`activity-card card bg-${theme} mb-3`}>
 			<div className="card-header">
 				<h3 className="text-center text-primary">
 					<i className={`bi bi-${activity.icon} mx-3`}></i>
