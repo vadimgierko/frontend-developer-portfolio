@@ -1,35 +1,72 @@
-# Hello, World!
+# Total Redesigning & Restructuring The Portfolio Site TODO LIST
 
-My name is Vadim Gierko and I’m a **self-taught React / Firebase developer** with
-- more than a year of non-commercial programming experience &...
-- an artistic, blogging and musical background.
+## New Stack
 
-And this is my portfolio repository!
-To see the portfolio deployed with Github Pages click this link: https://vadimgierko.github.io/frontend-developer-portfolio/
+- [ ] react-bootstrap
+- [ ] react-router
+- [ ] react-router-bootstrap@rr-v4
 
-## What you'll find in my portfolio
-- languages, frameworks, technologies & tools I use
-- what kind of projects I love to develop the most
-- my top projects
-  - screenshots
-  - descriptions
-  - links to live versions of projects
-  - links to gh repos
-- details about my creative background
-- what else I'm interested in
+## New (& extracted) Sections
 
-## Technologies used in project
-- React 17.0.2
-- Bootstrap 5.1.1
-- Bootstrap Icons 1.5.0
-- Github Pages 3.2.3
+- [ ] Technologies I use:
+  - [ ] tech stack showen with icons
+- [ ] What I can develop:
+  - [ ] apps / sites with:
+    - [ ] CRUD operations
+    - [ ] Firebase database/ authentication/ storage integration
+    - [ ] fetching data from (public) API
+    - [ ] dynamic routing
+  - [ ] simple 2D games
+  - [ ] simple visualizations with p5.js library
+- [ ] What I'm curently learning...
+  - [ ] ... to become a full-stack dev:
+    - [ ] MERN stack:
+      - [ ] MongoDB
+      - [ ] MongoDB Atlas
+      - [ ] Express
+    - [ ] Express App:
+      - [ ] Express Application Generator
+      - [ ] MongoDB Atlas
+      - [ ] Mongoose
+      - [ ] Pug templating view engine
+      - [ ] deploying on Heroku
+  - [ ] ... to generate static web sites:
+    - [ ] Gatsby
 
-## NOTE
-This portfolio definitely isn't one of my top projects at the moment, but recently I've improved the project by applying:
-- dark/light mode
-- Atomic Design methodology
-- better code splitting, refactoring etc.
 
-Now I will most likely make two huge fixes / updates:
-- completely new "Bootstrap free" design with CSS Flexbox & Grid Layouts & styled components
-- create CMS & integrate it with the portfolio via Firebase
+## Redesigning
+  - [ ] fonts
+  - [ ] color palette
+  - [ ] modals for projects
+  - [ ] tags for tech
+  - [ ] Hero Header (need photo)
+- [ ] new architecture for tech stack
+  - [ ] roadmap ?
+  - [ ] icons instead of names of tech ?
+
+- [ ] new architecture for dev projects
+  - [ ] major / small projects ?
+  - [ ] modal for every project from gallery with description
+  - [ ] page for every project => React Router
+  - [ ] few screenshots for every project
+  - [ ] project categories
+    - [ ] games
+    - [ ] CRUD- [ ]apps
+    - [ ] API- [ ]apps
+    - [ ] p5/visual- [ ]apps
+    - [ ] tutorials
+    - [ ] libraries/templates
+- [ ] new section: 
+- [ ] new architecture for creative background projects
+  - [ ] modal for every area/project from gallery with description
+  - [ ] page for every area/project project
+  - [ ] few screenshots for every project
+  - [ ] project categories
+    - [ ] blogs
+    - [ ] fb/ig accounts
+    - [ ] ebook
+    - [ ] creative notes
+
+=> update, then =>
+- [ ] deploy with Gatsby
+- [ ] deploy on vadimgierko.com domain with gh
