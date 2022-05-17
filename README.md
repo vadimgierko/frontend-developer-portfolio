@@ -2,14 +2,18 @@
 
 ## New Stack
 
-- [ ] react-bootstrap
+- [X] react-bootstrap (instead of bootstrap)
+- [X] react-icons (instead of bootstrap icons)
 - [ ] react-router
-- [ ] react-router-bootstrap@rr-v4
+- [ ] react-router-bootstrap@rr-v4 (to style react router links)
 
 ## New (& extracted) Sections
 
-- [ ] Technologies I use:
-  - [ ] tech stack showen with icons
+- [X] Hero Section
+- [ ] About
+- [ ] Tech Stack:
+  - [ ] tech stack shown with icons
+  - [ ] roadmap ?
 - [ ] What I can develop:
   - [ ] apps / sites with:
     - [ ] CRUD operations
@@ -33,22 +37,10 @@
   - [ ] ... to generate static web sites:
     - [ ] Gatsby
 
+## Adding Pages (for)
 
-## Redesigning
-  - [ ] fonts
-  - [ ] color palette
-  - [ ] modals for projects
-  - [ ] tags for tech
-  - [ ] Hero Header (need photo)
-- [ ] new architecture for tech stack
-  - [ ] roadmap ?
-  - [ ] icons instead of names of tech ?
-
-- [ ] new architecture for dev projects
-  - [ ] major / small projects ?
-  - [ ] modal for every project from gallery with description
-  - [ ] page for every project => React Router
-  - [ ] few screenshots for every project
+- [ ] About
+- [ ] Projects
   - [ ] project categories
     - [ ] games
     - [ ] CRUD- [ ]apps
@@ -56,9 +48,10 @@
     - [ ] p5/visual- [ ]apps
     - [ ] tutorials
     - [ ] libraries/templates
-- [ ] new section: 
-- [ ] new architecture for creative background projects
-  - [ ] modal for every area/project from gallery with description
+  - [ ] page for every project => React Router
+  - [ ] few screenshots for every project
+  - [ ] GitHub API => description, README rendered via React Markdown
+- [ ] Creative Background
   - [ ] page for every area/project project
   - [ ] few screenshots for every project
   - [ ] project categories
@@ -67,6 +60,7 @@
     - [ ] ebook
     - [ ] creative notes
 
-=> update, then =>
-- [ ] deploy with Gatsby
+## Deployment
+
 - [ ] deploy on vadimgierko.com domain with gh
+- [ ] Gatsby
