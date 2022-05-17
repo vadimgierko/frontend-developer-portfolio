@@ -38,4 +38,11 @@ export const DATA = {
 			],
 		},
 	},
+	hero: {
+		imgSrc:
+			"https://vadimgierko.github.io/frontend-developer-portfolio/img/vadim-gerko-zdjecie-cv.jpg",
+		title: "Hello, World!",
+		content:
+			"My name is Vadim Gierko and I’m a self-taught front-end developer (React) based in Lublin LOOKING FOR A FIRST DEV JOB!",
+	},
 };
