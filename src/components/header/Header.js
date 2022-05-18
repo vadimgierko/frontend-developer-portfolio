@@ -24,9 +24,9 @@ export default function Header(props) {
 					<Navbar.Toggle aria-controls="responsive-navbar-nav" />
 					<Navbar.Collapse id="responsive-navbar-nav">
 						<Nav className="me-auto">
-							{navLinks.map((navLink, n) => (
+							{navLinks.map((navLink) => (
 								<Nav.Link
-									key={`navlink-${navLink.name}`}
+									key={navLink.name}
 									href={navLink.link}
 									target={navLink.name === "Blog" ? "_blank" : ""}
 								>

@@ -7,7 +7,7 @@ export default function Hero(props) {
 	const content = props.hero.content;
 
 	return (
-		<section id="hero">
+		<section id="hero" className="section">
 			<div>
 				<Image src={imgSrc} roundedCircle style={{ width: "100px" }} />
 			</div>
