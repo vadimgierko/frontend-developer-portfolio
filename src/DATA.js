@@ -7,7 +7,7 @@ export const DATA = {
 			links: [
 				{
 					name: "About",
-					link: "#about",
+					link: "#",
 				},
 				{
 					name: "Tech Stack",
@@ -16,6 +16,10 @@ export const DATA = {
 				{
 					name: "Projects",
 					link: "#projects",
+				},
+				{
+					name: "Currently Learning",
+					link: "#currently-learning",
 				},
 				{
 					name: "Creative Background",
