@@ -14,7 +14,7 @@ export default function Header(props) {
 		<header>
 			<Navbar
 				collapseOnSelect
-				expand="md"
+				expand="lg"
 				bg="light"
 				variant="light"
 				className="fixed-top"
