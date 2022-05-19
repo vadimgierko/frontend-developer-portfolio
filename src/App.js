@@ -5,6 +5,7 @@ import Header from "./components/header/Header";
 import Hero from "./components/hero/Hero";
 import TechStack from "./components/techStack/TechStack";
 import CurrentlyLearning from "./components/currentlyLearning/CurrentlyLearning";
+import CreativeBackground from "./components/creativeBackground/CreativeBackground";
 
 import { DATA } from "./DATA";
 import { useEffect, useState } from "react";
@@ -37,11 +38,12 @@ export default function App() {
 
 	return (
 		<div className="app">
+			<Header header={DATA.header} />
 			<main>
-				<Header header={DATA.header} />
 				<Hero hero={DATA.hero} imgSize={avatarSize} />
 				<TechStack props={iconProps} />
 				<CurrentlyLearning props={iconProps} />
+				<CreativeBackground props={iconProps} />
 			</main>
 		</div>
 	);
