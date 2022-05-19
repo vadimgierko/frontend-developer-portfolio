@@ -6,6 +6,7 @@ import Hero from "./components/hero/Hero";
 import TechStack from "./components/techStack/TechStack";
 import CurrentlyLearning from "./components/currentlyLearning/CurrentlyLearning";
 import CreativeBackground from "./components/creativeBackground/CreativeBackground";
+import WhatCanIbuild from "./components/whatCanIbuild/WhatCanIbuild";
 
 import { DATA } from "./DATA";
 import { useEffect, useState } from "react";
@@ -42,6 +43,7 @@ export default function App() {
 			<main>
 				<Hero hero={DATA.hero} imgSize={avatarSize} />
 				<TechStack props={iconProps} />
+				<WhatCanIbuild props={iconProps} />
 				<CurrentlyLearning props={iconProps} />
 				<CreativeBackground props={iconProps} />
 			</main>

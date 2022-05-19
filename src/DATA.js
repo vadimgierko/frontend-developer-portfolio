@@ -5,13 +5,17 @@ export const DATA = {
 				content: "Vadim Gierko",
 			},
 			links: [
-				{
-					name: "About",
-					link: "#",
-				},
+				// {
+				// 	name: "About",
+				// 	link: "#",
+				// },
 				{
 					name: "Tech Stack",
 					link: "#tech-stack",
+				},
+				{
+					name: "What Can I Build",
+					link: "#what-can-i-build",
 				},
 				{
 					name: "Projects",
