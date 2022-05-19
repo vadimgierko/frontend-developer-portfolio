@@ -7,6 +7,7 @@ import TechStack from "./components/techStack/TechStack";
 import CurrentlyLearning from "./components/currentlyLearning/CurrentlyLearning";
 import CreativeBackground from "./components/creativeBackground/CreativeBackground";
 import WhatCanIbuild from "./components/whatCanIbuild/WhatCanIbuild";
+import Footer from "./components/footer/Footer";
 
 import { DATA } from "./DATA";
 import { useEffect, useState } from "react";
@@ -46,6 +47,10 @@ export default function App() {
 				<WhatCanIbuild props={iconProps} />
 				<CurrentlyLearning props={iconProps} />
 				<CreativeBackground props={iconProps} />
+				<Footer
+					releaseYear={DATA.footer.releaseYear}
+					links={DATA.footer.links}
+				/>
 			</main>
 		</div>
 	);
