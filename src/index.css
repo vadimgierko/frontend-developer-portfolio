@@ -2,34 +2,52 @@ html {
   scroll-behavior: smooth;
 }
 
+/* mobile-first design css below */
+
 body {
   margin: 0;
   padding: 0;
 }
-
-/* main {
-  width: 90%;
-  margin: auto;
-  text-align: center;
-} */
 
 .section {
   display: flex;
   flex-direction: column;
   justify-content: center;
   min-height: 100vh;
-  width: 70%;
+  width: 90%;
   text-align: center;
   margin: auto;
 }
 
-@media only screen and (min-width: 576px) {
-  /* main {
-    width: 70%;
-  } */
+.section-container:nth-child(even) {
+  background: rgb(241, 241, 241);
+}
 
-  #hero {
-    width: 50%;
+#hero {
+  width: 50%;
+}
+
+/* tablets css below */
+
+@media only screen and (min-width: 820px) {
+  .section {
+    width: 70%;
+  }
+
+  h1 {
+    font-size: 40px !important;
+  }
+
+  p {
+    font-size: 20px !important;
+  }
+}
+
+/* desktops css below */
+
+@media only screen and (min-width: 1200px) {
+  .section {
+    width: 55%;
   }
 
   h1 {
