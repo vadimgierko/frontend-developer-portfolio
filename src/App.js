@@ -1,14 +1,14 @@
 import "./index.css";
 import "bootstrap/dist/css/bootstrap.min.css";
-
 import Header from "./components/header/Header";
-import Hero from "./components/hero/Hero";
+import About from "./components/about/About";
 import TechStack from "./components/techStack/TechStack";
-import CurrentlyLearning from "./components/currentlyLearning/CurrentlyLearning";
 import CreativeBackground from "./components/creativeBackground/CreativeBackground";
+import CurrentlyLearning from "./components/currentlyLearning/CurrentlyLearning";
 import WhatCanIbuild from "./components/whatCanIbuild/WhatCanIbuild";
 import Footer from "./components/footer/Footer";
 import Projects from "./components/projects/Projects";
+import ScrollToTop from "./components/scrollToTop/ScrollToTop";
 
 import { DATA } from "./DATA";
 import { useEffect, useState } from "react";
@@ -43,7 +43,7 @@ export default function App() {
 		<div className="app">
 			<Header header={DATA.header} />
 			<main>
-				<Hero hero={DATA.hero} imgSize={avatarSize} />
+				<About about={DATA.about} imgSize={avatarSize} />
 				<TechStack props={iconProps} />
 				<WhatCanIbuild props={iconProps} />
 				<Projects projects={DATA.projects} />
@@ -51,6 +51,7 @@ export default function App() {
 				<CreativeBackground props={iconProps} />
 			</main>
 			<Footer releaseYear={DATA.footer.releaseYear} links={DATA.footer.links} />
+			<ScrollToTop />
 		</div>
 	);
 }

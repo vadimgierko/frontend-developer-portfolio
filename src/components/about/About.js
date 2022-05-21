@@ -1,23 +1,23 @@
 import Image from "react-bootstrap/Image";
 
-export default function Hero(props) {
+export default function About(props) {
 	// props => vars
-	const imgSrc = props.hero.imgSrc;
+	const imgSrc = props.about.imgSrc;
 	const imgSize = props.imgSize;
 	console.log("img size:", imgSize);
-	const title = props.hero.title;
-	const content = props.hero.content;
+	const title = props.about.title;
+	const content = props.about.content;
 
 	return (
-		<section id="hero" className="section">
+		<section id="about" className="section">
 			<div>
 				<Image src={imgSrc} roundedCircle style={{ width: imgSize + "px" }} />
 			</div>
 			<br />
 			<div>
-				<h1 id="hero-title">{title}</h1>
+				<h1 id="about-title">{title}</h1>
 				<br />
-				<p id="hero-content">{content}</p>
+				<p id="about-content">{content}</p>
 			</div>
 		</section>
 	);

@@ -5,10 +5,10 @@ export const DATA = {
 				content: "Vadim Gierko",
 			},
 			links: [
-				// {
-				// 	name: "About",
-				// 	link: "#",
-				// },
+				{
+					name: "About",
+					link: "#about",
+				},
 				{
 					name: "Tech Stack",
 					link: "#tech-stack",
@@ -46,7 +46,7 @@ export const DATA = {
 			],
 		},
 	},
-	hero: {
+	about: {
 		imgSrc:
 			"https://vadimgierko.github.io/frontend-developer-portfolio/img/vadim-gerko-zdjecie-cv.jpg",
 		title: "Hello, World!",
@@ -148,11 +148,11 @@ export const DATA = {
 		releaseYear: 2021, // update release year if necessary
 		links: [
 			{
-				label: "Vadim Gierko",
-				link: "https://github.com/vadimgierko",
+				label: "Vadim Gierko", // input your name here
+				link: "https://github.com/vadimgierko", // input link to your page or GitHub profile here
 			},
 			{
-				label: "[portfolio code]",
+				label: "[see the code]",
 				link: "https://github.com/vadimgierko/frontend-developer-portfolio", // input link to GitHub repository here
 			},
 			// {
