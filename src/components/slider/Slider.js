@@ -4,6 +4,7 @@ import Image from "react-bootstrap/Image";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import Button from "react-bootstrap/Button";
+import Badge from "react-bootstrap/Badge";
 // icons:
 import { AiOutlineLeft } from "react-icons/ai";
 import { AiOutlineRight } from "react-icons/ai";
@@ -16,7 +17,7 @@ export default function Slider({ items }) {
 		<div className="slider">
 			<Row className="slider-img-section">
 				<Col
-					xs={2}
+					xs={1}
 					style={{
 						cursor: "pointer",
 						display: "flex",
@@ -36,7 +37,7 @@ export default function Slider({ items }) {
 					</div>
 				</Col>
 				<Col
-					xs={2}
+					xs={1}
 					style={{
 						cursor: "pointer",
 						display: "flex",
@@ -53,9 +54,40 @@ export default function Slider({ items }) {
 			</Row>
 			<br />
 			<h3>{items[index].name}</h3>
+			<div className="d-flex justify-content-center flex-wrap">
+				{items[index].techStack.map((tech, t) => (
+					<>
+						<Badge
+							pill
+							bg="secondary"
+							className={
+								t < items[index].techStack.length - 1 ? "me-1 mb-1" : "mb-1"
+							}
+						>
+							{tech}
+						</Badge>
+					</>
+				))}
+			</div>
+			<div className="d-flex justify-content-center flex-wrap">
+				{items[index].features.map((tech, t) => (
+					<>
+						<Badge
+							pill
+							bg="light"
+							text="secondary"
+							className={
+								t < items[index].features.length - 1 ? "me-1 mb-1" : "mb-1"
+							}
+						>
+							{tech}
+						</Badge>
+					</>
+				))}
+			</div>
 			<p>{items[index].shortDescription}</p>
 			<div
-				className="btn-section"
+				className="btn-section mb-3"
 				style={{
 					cursor: "pointer",
 					display: "flex",

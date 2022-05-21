@@ -56,11 +56,18 @@ export const DATA = {
 	projects: [
 		{
 			name: "Linky Notes",
-			img: "https://vadimgierko.github.io/frontend-developer-portfolio/img/linky-notes-app-vadim-gierko.png",
+			img: "img/linky-notes-app-vadim-gierko.png",
 			gp: "https://vadimgierko.github.io/linky-notes/",
 			repoUrl: "https://github.com/vadimgierko/linky-notes",
-			language:
-				"React, React Router, React Context, Firebase, Bootstrap, gh-pages",
+			techStack: [
+				"react",
+				"react-router",
+				"firebase",
+				"bootstrap",
+				"bootstrap-icons",
+				"gh-pages",
+			],
+			features: ["crud", "database", "routing", "users authentication", "rwd"],
 			shortDescription:
 				"Organize & filter your notes with tags & create your own knowledge base!",
 			description:
@@ -68,11 +75,27 @@ export const DATA = {
 		},
 		{
 			name: "Blogging Platform with Markdown Text Editor",
-			img: "https://vadimgierko.github.io/frontend-developer-portfolio/img/blogging-platform-vadim-gierko-screen.png",
+			img: "img/blogging-platform-vadim-gierko-screen.png",
 			gp: "https://vadimgierko.github.io/blogging-platform/",
 			repoUrl: "https://github.com/vadimgierko/blogging-platform",
-			language:
-				"React, React Context, React Router, React Markdown, Bootstrap, Bootswatch, Firebase, gh-pages",
+			techStack: [
+				"react",
+				"react-router",
+				"react-markdown",
+				"firebase",
+				"bootstrap",
+				"bootstrap-icons",
+				"bootswatch",
+				"gh-pages",
+			],
+			features: [
+				"crud",
+				"database",
+				"routing",
+				"users authentication",
+				"rwd",
+				"markdown editor",
+			],
 			shortDescription:
 				"Run your blog for free & edit your articles via Markdown Editor!",
 			description:
@@ -80,10 +103,17 @@ export const DATA = {
 		},
 		{
 			name: "GitHub-API-Users-Search-App",
-			img: "https://vadimgierko.github.io/frontend-developer-portfolio/img/github-user-search-app-screen-vadim-gierko.png",
+			img: "img/github-user-search-app-screen-vadim-gierko.png",
 			gp: "https://vadimgierko.github.io/github-api-users-search-app/#/vadimgierko",
 			repoUrl: "https://github.com/vadimgierko/github-api-users-search-app",
-			language: "React, React Router, Bootstrap, GitHub API, RWD, gh-pages",
+			techStack: [
+				"react",
+				"github api",
+				"bootstrap",
+				"bootstrap-icons",
+				"gh-pages",
+			],
+			features: ["api", "routing", "rwd"],
 			shortDescription:
 				"Find any user on GitHub & see his/her public repositories!",
 			description:
@@ -91,10 +121,18 @@ export const DATA = {
 		},
 		{
 			name: "Mind Maps App",
-			img: "https://vadimgierko.github.io/frontend-developer-portfolio/img/mind-maps-app-screen-vadim-gierko.png",
+			img: "img/mind-maps-app-screen-vadim-gierko.png",
 			gp: "https://vadimgierko.github.io/MIND-MAP-APP/",
 			repoUrl: "https://github.com/vadimgierko/MIND-MAP-APP",
-			language: "JavaScript, p5.js, jQuery, Bootstrap, Firebase",
+			techStack: [
+				"javascript",
+				"p5.js",
+				"jquery",
+				"bootstrap",
+				"bootstrap-icons",
+				"firebase",
+			],
+			features: ["crud", "database", "users authentication", "rwd"],
 			shortDescription:
 				"Create, save & edit your mind maps online with this app!",
 			description:
@@ -102,20 +140,22 @@ export const DATA = {
 		},
 		{
 			name: "Old School 2D Racing Game",
-			img: "https://vadimgierko.github.io/frontend-developer-portfolio/img/old-school-racing-game-p5-js-vadim-gierko-2.png",
+			img: "img/old-school-racing-game-p5-js-vadim-gierko-2.png",
 			gp: "https://vadimgierko.github.io/old-school-2d-racing-game/",
 			repoUrl: "https://github.com/vadimgierko/old-school-2d-racing-game",
-			language: "JavaScript, p5.js library, Bootstrap Icons",
+			techStack: ["javascript", "p5.js", "bootstrap-icons"],
+			features: ["animation", "rwd"],
 			shortDescription: "Play the old school 2D racing game!",
 			description:
 				"Old-school 2D racing game created in JavaScript using p5.js library. I've started to develop this game at the beggining of my programming journey, but... had not enough knowledge to finish it then. So now, after 10 months brake I've figured all bugs & problems out, so the game is finally completed! I love working with p5.js, which alows you to create animations like this in that game, and thanks to this library I've made my first steps in programming learning with Khan Academy online courses, so it was a pleasure to come back to old habbits after 10 months of working mainly with React & other technologies ;-) Car's design was inspired by drawing of my son! Enjoy!",
 		},
 		{
 			name: "Let It Snow! Falling Snow Animation",
-			img: "https://vadimgierko.github.io/frontend-developer-portfolio/img/let-it-snow-p5-javascript-animation-vadim-gierko.png",
+			img: "img/let-it-snow-p5-javascript-animation-vadim-gierko.png",
 			gp: "https://vadimgierko.github.io/let-it-snow/",
 			repoUrl: "https://github.com/vadimgierko/let-it-snow",
-			language: "JavaScript, p5.js library",
+			techStack: ["javascript", "p5.js"],
+			features: ["animation", "rwd"],
 			shortDescription:
 				"Listen to the beautiful Let it snow song while watching animated falling snow!",
 			description:
@@ -123,11 +163,19 @@ export const DATA = {
 		},
 		{
 			name: "Live Markdown Text Editor",
-			img: "https://vadimgierko.github.io/frontend-developer-portfolio/img/markdown-text-editor-by-vadim-gierko.png",
+			img: "img/markdown-text-editor-by-vadim-gierko.png",
 			gp: "https://vadimgierko.github.io/markdown-text-editor/",
 			repoUrl: "https://github.com/vadimgierko/markdown-text-editor",
-			language:
-				"React, React-Markdown, remark gfm plugin, Bootstrap, Local Storage (to simulate database)",
+			techStack: [
+				"react",
+				"react-router",
+				"react-markdown",
+				"remark-gfm",
+				"bootstrap",
+				"local-storage-api",
+				"gh-pages",
+			],
+			features: ["routing", "markdown editor", "local storage", "rwd"],
 			shortDescription:
 				"Check how your Markdown text will look like when rendered!",
 			description:
@@ -135,10 +183,11 @@ export const DATA = {
 		},
 		{
 			name: "Pixel Draw App",
-			img: "https://vadimgierko.github.io/frontend-developer-portfolio/img/pixel-draw-app-screen-vadim-gierko.png",
+			img: "img/pixel-draw-app-screen-vadim-gierko.png",
 			gp: "https://vadimgierko.github.io/PixelDrawApp/",
 			repoUrl: "https://github.com/vadimgierko/PixelDrawApp",
-			language: "React, Bootstrap",
+			techStack: ["react", "bootstrap", "bootstrap-icons"],
+			features: ["crud", "local storage", "rwd"],
 			shortDescription: "Create, save and edit your first pixel art!",
 			description:
 				"Pixel Drawing App allows you to create pictures by filling pixels with color. All you need is to pick the color from color picker and then click on any pixel on the board to fill it with the chosen color! You can save a pixel picture as a project in local storage (your browser), so you can work on that later and it will be possible to download the image soon (when I rewrite it with p5.js). Also the app will be integrated with Firebase, like MindMapsApp, so there will be the possibility to sign up and save/ edit your pixel drawings in database.",
