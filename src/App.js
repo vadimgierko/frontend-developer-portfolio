@@ -46,9 +46,7 @@ export default function App() {
 				<TechStack props={iconProps} />
 				<WhatCanIbuild props={iconProps} />
 				<Projects projects={DATA.projects} />
-				<CurrentlyLearning
-					props={{ ...iconProps, style: { ...iconProps.style, color: "grey" } }}
-				/>
+				<CurrentlyLearning props={iconProps} />
 				<CreativeBackground props={iconProps} />
 			</main>
 			<Footer releaseYear={DATA.footer.releaseYear} links={DATA.footer.links} />
