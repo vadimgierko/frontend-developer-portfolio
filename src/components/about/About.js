@@ -4,7 +4,6 @@ export default function About(props) {
 	// props => vars
 	const imgSrc = props.about.imgSrc;
 	const imgSize = props.imgSize;
-	console.log("img size:", imgSize);
 	const title = props.about.title;
 	const content = props.about.content;
 

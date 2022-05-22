@@ -5,7 +5,6 @@
 // {icon: <SomeIcon />, name: "Some description name"}
 
 export default function Section({ id = "", title = "", iconItems = [] }) {
-	//console.log("iconItems:", iconItems);
 	return (
 		<div className="section-container">
 			<section id={id} className="section">

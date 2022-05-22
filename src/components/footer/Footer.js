@@ -22,25 +22,11 @@ export default function Footer({
 							>
 								{link.label}
 							</Nav.Link>
-
-							// <span key={"footer-link-" + l}>
-							//   <FooterLink label={link.label} link={link.link} />{" "}
-							//   {l < links.length - 1 ? " | " : null}
-							// </span>
 						))}
 					</Nav>
 				</Container>
 			</Navbar>
 		</footer>
-	);
-}
-
-// default link opens in a new window
-function FooterLink({ label, link }) {
-	return (
-		<a href={link} target="_blank" rel="noreferrer">
-			{label}
-		</a>
 	);
 }
 

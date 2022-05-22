@@ -23,8 +23,7 @@ export default function App() {
 		const size = windowSize > 576 ? 80 : 40;
 		const style = { margin: "0.5em" };
 		const props = { style, size };
-		console.log("window init size:", window.innerWidth);
-		console.log("icon item props:", props);
+		//console.log("window init size:", window.innerWidth);
 		setIconProps(props);
 		setAvatarSize(() => {
 			return windowSize > 576 ? 200 : 100;
@@ -47,7 +46,9 @@ export default function App() {
 				<TechStack props={iconProps} />
 				<WhatCanIbuild props={iconProps} />
 				<Projects projects={DATA.projects} />
-				<CurrentlyLearning props={iconProps} />
+				<CurrentlyLearning
+					props={{ ...iconProps, style: { ...iconProps.style, color: "grey" } }}
+				/>
 				<CreativeBackground props={iconProps} />
 			</main>
 			<Footer releaseYear={DATA.footer.releaseYear} links={DATA.footer.links} />
