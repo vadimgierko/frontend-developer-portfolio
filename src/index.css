@@ -2,10 +2,29 @@ html {
   scroll-behavior: smooth;
 }
 
+/* mobile-first design css below */
+
 body {
   margin: 0;
   padding: 0;
-  margin-bottom: -15px;
+}
+
+.section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-height: 100vh;
+  width: 90%;
+  text-align: center;
+  margin: auto;
+}
+
+.section-container:nth-child(even) {
+  background: rgb(241, 241, 241);
+}
+
+#hero {
+  width: 50%;
 }
 
 .scroll-to-top {
@@ -14,4 +33,37 @@ body {
   position: fixed;
   right: 3%;
   bottom: 1%;
+}
+
+/* tablets css below */
+
+@media only screen and (min-width: 820px) {
+  .section {
+    width: 70%;
+  }
+
+  /* h1 {
+    font-size: 40px !important;
+  }
+
+  p {
+    font-size: 20px !important;
+  } */
+}
+
+/* desktops css below */
+
+@media only screen and (min-width: 1200px) {
+  .section {
+    width: 55%;
+  }
+
+  /* h1 {
+    font-size: 60px !important;
+  }
+  */
+
+  p {
+    font-size: 24px !important;
+  }
 }
