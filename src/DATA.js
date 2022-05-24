@@ -192,6 +192,17 @@ export const DATA = {
 			description:
 				"Pixel Drawing App allows you to create pictures by filling pixels with color. All you need is to pick the color from color picker and then click on any pixel on the board to fill it with the chosen color! You can save a pixel picture as a project in local storage (your browser), so you can work on that later and it will be possible to download the image soon (when I rewrite it with p5.js). Also the app will be integrated with Firebase, like MindMapsApp, so there will be the possibility to sign up and save/ edit your pixel drawings in database.",
 		},
+		{
+			name: "Snake Game Clone",
+			img: "img/snake-game-clone-screen-vadim-gierko.png",
+			gp: "https://vadimgierko.github.io/snake-game-react/",
+			repoUrl: "https://github.com/vadimgierko/snake-game-react",
+			techStack: ["react", "javascript", "react-icons", "css"],
+			features: ["game-loop", "rwd"],
+			shortDescription:
+				"Old School 2D Snake Game for desktop & mobile written in React. Enjoy!",
+			description: "",
+		},
 	],
 	footer: {
 		releaseYear: 2021, // update release year if necessary
