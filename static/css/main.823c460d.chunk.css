@@ -1,0 +1,2 @@
+html{scroll-behavior:smooth}body{margin:0;padding:0}.section{display:flex;flex-direction:column;justify-content:center;min-height:100vh;width:90%;text-align:center;margin:auto}.section-container-light:nth-child(2n){background:#f1f1f1}.section-container-dark:nth-child(2n){background:#242835}#hero{width:50%}.scroll-to-top{z-index:1;color:grey;position:fixed;right:3%;bottom:1%}@media only screen and (min-width:820px){.section{width:70%}}@media only screen and (min-width:1200px){.section{width:55%}p{font-size:24px!important}}
+/*# sourceMappingURL=main.823c460d.chunk.css.map */
