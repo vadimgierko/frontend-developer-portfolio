@@ -2,13 +2,17 @@ import Navbar from "react-bootstrap/Navbar";
 import Nav from "react-bootstrap/Nav";
 import Container from "react-bootstrap/Container";
 
+import { useTheme } from "../../useTheme";
+
 export default function Footer({
 	releaseYear = new Date().getFullYear(), // default value = current year
 	links = [],
 }) {
+	const { theme } = useTheme();
+
 	return (
 		<footer style={{ textAlign: "center" }}>
-			<Navbar bg="light" variant="light">
+			<Navbar bg={theme} variant={theme}>
 				<Container>
 					<Nav className="m-auto">
 						<Nav.Link disabled>

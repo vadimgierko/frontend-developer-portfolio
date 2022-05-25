@@ -19,8 +19,12 @@ body {
   margin: auto;
 }
 
-.section-container:nth-child(even) {
+.section-container-light:nth-child(even) {
   background: rgb(241, 241, 241);
+}
+
+.section-container-dark:nth-child(even) {
+  background: rgb(36, 40, 53);
 }
 
 #hero {

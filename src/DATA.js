@@ -102,7 +102,7 @@ export const DATA = {
 				"This full-stack SPA allows you to create & run your blog (or many blogs) for free after creating a free user account, write & edit your articles with simple & intuitive markdown text editor (which was also created by myself) & read published blogs without authentication. There is a small blog called 'My Programming Journey', where I published a few articles. This app & linky_notes app (see above) are my newest, most complex & advanced responsive full-stack single-page real-world applications, that support all kinds of CRUD features, in which I have used all of my previous knowledge and skills in the field of front-end development (React, React Router, Bootstrap) and realtime database & authentication integration (Firebase).",
 		},
 		{
-			name: "GitHub-API-Users-Search-App",
+			name: "GitHub API Users Search App",
 			img: "img/github-user-search-app-screen-vadim-gierko.png",
 			gp: "https://vadimgierko.github.io/github-api-users-search-app/#/vadimgierko",
 			repoUrl: "https://github.com/vadimgierko/github-api-users-search-app",
@@ -203,17 +203,28 @@ export const DATA = {
 				"Old School 2D Snake Game for desktop & mobile written in React. Enjoy!",
 			description: "",
 		},
+		{
+			name: "Sudoku Solver",
+			img: "img/sudoku-solver-app-screen-vadim-gierko.png",
+			gp: "https://codesandbox.io/s/sudoku-solver-ip90ku",
+			repoUrl: "https://github.com/vadimgierko/sudoku-solver",
+			techStack: ["react", "javascript"],
+			features: ["sudoku-solver-algorithm"],
+			shortDescription:
+				"Input easy sudoku into the board & let the algorithm solve it!",
+			description: "",
+		},
 	],
 	footer: {
-		releaseYear: 2021, // update release year if necessary
+		releaseYear: 2021,
 		links: [
 			{
-				label: "Vadim Gierko", // input your name here
-				link: "https://github.com/vadimgierko", // input link to your page or GitHub profile here
+				label: "Vadim Gierko",
+				link: "https://github.com/vadimgierko",
 			},
 			{
 				label: "[see the code]",
-				link: "https://github.com/vadimgierko/frontend-developer-portfolio", // input link to GitHub repository here
+				link: "https://github.com/vadimgierko/frontend-developer-portfolio",
 			},
 			// {
 			//   label: "CodeSandbox",

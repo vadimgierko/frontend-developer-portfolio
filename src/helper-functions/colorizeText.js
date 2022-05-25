@@ -4,10 +4,10 @@ export default function colorizeText(text = "", isDarkTheme = false) {
 	const randomColorIntensity = () => {
 		if (isDarkTheme) {
 			// if dark theme, random color will be lighter
-			return Math.random() * 200 + 50;
+			return Math.random() * 140 + 110;
 		}
 		// if light theme, random color will be darker
-		return Math.random() * 250 - 60;
+		return Math.random() * 250 - 50;
 	};
 
 	Array.from(text).forEach((letter) => {

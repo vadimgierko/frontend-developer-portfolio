@@ -1,5 +1,7 @@
 import "./index.css";
 import "bootstrap/dist/css/bootstrap.min.css";
+import { useEffect, useState } from "react";
+// components:
 import Header from "./components/header/Header";
 import About from "./components/about/About";
 import TechStack from "./components/techStack/TechStack";
@@ -9,11 +11,13 @@ import WhatCanIbuild from "./components/whatCanIbuild/WhatCanIbuild";
 import Footer from "./components/footer/Footer";
 import Projects from "./components/projects/Projects";
 import ScrollToTop from "./components/scrollToTop/ScrollToTop";
-
+// custom hooks:
+import { useTheme } from "./useTheme";
+// data:
 import { DATA } from "./DATA";
-import { useEffect, useState } from "react";
 
 export default function App() {
+	const { theme } = useTheme();
 	const [windowSize, setWindowSize] = useState(window.innerWidth);
 	const [iconProps, setIconProps] = useState();
 	const [avatarSize, setAvatarSize] = useState(100);
@@ -23,7 +27,6 @@ export default function App() {
 		const size = windowSize > 576 ? 80 : 40;
 		const style = { margin: "0.5em" };
 		const props = { style, size };
-		//console.log("window init size:", window.innerWidth);
 		setIconProps(props);
 		setAvatarSize(() => {
 			return windowSize > 576 ? 200 : 100;
@@ -33,13 +36,12 @@ export default function App() {
 	useEffect(() => {
 		window.addEventListener("resize", () => {
 			const size = window.innerWidth;
-			console.log("window size after resize:", size);
 			setWindowSize(size);
 		});
 	}, []);
 
 	return (
-		<div className="app">
+		<div className={theme === "dark" ? "app bg-dark text-light" : "app"}>
 			<Header header={DATA.header} />
 			<main>
 				<About about={DATA.about} imgSize={avatarSize} />

@@ -4,9 +4,13 @@
 // iconItems must be an array of objects:
 // {icon: <SomeIcon />, name: "Some description name"}
 
+import { useTheme } from "../../useTheme";
+
 export default function Section({ id = "", title = "", iconItems = [] }) {
+	const { theme } = useTheme();
+
 	return (
-		<div className="section-container">
+		<div className={"section-container-" + theme}>
 			<section id={id} className="section">
 				<h1>{title}</h1>
 				<br />

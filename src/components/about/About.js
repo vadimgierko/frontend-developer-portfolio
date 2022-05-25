@@ -10,7 +10,12 @@ export default function About(props) {
 	return (
 		<section id="about" className="section">
 			<div>
-				<Image src={imgSrc} roundedCircle style={{ width: imgSize + "px" }} />
+				<Image
+					src={imgSrc}
+					roundedCircle
+					style={{ width: imgSize + "px" }}
+					className="shadow"
+				/>
 			</div>
 			<br />
 			<div>
