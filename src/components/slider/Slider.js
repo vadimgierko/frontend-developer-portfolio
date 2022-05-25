@@ -61,7 +61,9 @@ export default function Slider({ items }) {
 						key={"tech-stack-badge-" + t}
 						bg="secondary"
 						className={
-							t < items[index].techStack.length - 1 ? "me-1 mb-1" : "mb-1"
+							t < items[index].techStack.length - 1
+								? "me-1 mb-1 shadow"
+								: "mb-1 shadow"
 						}
 					>
 						{tech}
@@ -76,7 +78,9 @@ export default function Slider({ items }) {
 						bg="light"
 						text="secondary"
 						className={
-							t < items[index].features.length - 1 ? "me-1 mb-1" : "mb-1"
+							t < items[index].features.length - 1
+								? "me-1 mb-1 shadow"
+								: "mb-1 shadow"
 						}
 					>
 						{tech}
@@ -97,6 +101,7 @@ export default function Slider({ items }) {
 					size="sm"
 					href={items[index].gp}
 					target="_blank"
+					className="shadow"
 				>
 					Try the app!
 				</Button>
@@ -105,6 +110,7 @@ export default function Slider({ items }) {
 					size="sm"
 					href={items[index].repoUrl}
 					target="_blank"
+					className="shadow"
 				>
 					See the code!
 				</Button>

@@ -1,11 +1,12 @@
+import { useTheme } from "../../useTheme";
 import Navbar from "react-bootstrap/Navbar";
 import Nav from "react-bootstrap/Nav";
 import Container from "react-bootstrap/Container";
-import { BsLinkedin } from "react-icons/bs";
-import { BsGithub } from "react-icons/bs";
+import { BsLinkedin, BsGithub, BsSunFill, BsMoonFill } from "react-icons/bs";
 import colorizeText from "../../helper-functions/colorizeText";
 
 export default function Header(props) {
+	const { theme, switchTheme } = useTheme();
 	// props => vars
 	const brandContent = props.header.navbar.brand.content;
 	const navLinks = props.header.navbar.links;
@@ -15,9 +16,9 @@ export default function Header(props) {
 			<Navbar
 				collapseOnSelect
 				expand="lg"
-				bg="light"
-				variant="light"
-				className="fixed-top"
+				bg={theme}
+				variant={theme}
+				className="fixed-top shadow"
 			>
 				<Container>
 					<Navbar.Brand href="#">{brandContent}</Navbar.Brand>
@@ -31,12 +32,22 @@ export default function Header(props) {
 									target={navLink.name === "Blog" ? "_blank" : ""}
 								>
 									{navLink.name === "Creative Background"
-										? colorizeText(navLink.name)
+										? colorizeText(
+												navLink.name,
+												theme === "dark" ? true : false
+										  )
 										: navLink.name}
 								</Nav.Link>
 							))}
 						</Nav>
 						<Nav>
+							<Nav.Link>
+								{theme === "light" ? (
+									<BsMoonFill onClick={switchTheme} />
+								) : (
+									<BsSunFill onClick={switchTheme} />
+								)}
+							</Nav.Link>
 							<Nav.Link
 								href="https://pl.linkedin.com/in/vadimgierko"
 								target="_blank"
