@@ -22,11 +22,11 @@ This time I've made huge changes:
 
 ## To Do in the future (a list for myself)
 
-- [ ] **restore dark mode** (was enabled in v3):
-  - [ ] update according to new react-bootstrap styling
+- [X] **restore dark mode** (was enabled in v3):
+  - [X] update according to new react-bootstrap styling
   - [ ] add browser theme preferences check
 - [ ] **add colors to some section/s**, like *tech stack* && *creative background*
-- [ ] **add more projects**
+- [X] **add more projects**
 - [ ] project categories (?)
   - [ ] games
   - [ ] CRUD- [ ]apps
@@ -38,7 +38,7 @@ This time I've made huge changes:
 - [ ] connect to GitHub API (?)
   - [ ] description,
   - [ ] README rendered via React Markdown
-- [ ] **fix images** (must be the same format to prevent "bouncing" slider)
+- [X] **fix images** (must be the same format to prevent "bouncing" slider)
 - [ ] add modals to projects & creactive background section with more precise descriptions
 - [ ] creative activities categories (?):
   - [ ] blogs

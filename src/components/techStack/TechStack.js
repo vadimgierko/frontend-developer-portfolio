@@ -3,12 +3,14 @@ import Section from "../section/Section";
 import {
 	SiReact,
 	SiJavascript,
+	SiRedux,
 	SiFirebase,
 	SiBootstrap,
 	SiReactrouter,
 	SiHtml5,
 	SiCss3,
 	SiStyledcomponents,
+	SiMarkdown,
 	SiSass,
 	SiJquery,
 	SiVisualstudiocode,
@@ -20,44 +22,52 @@ export default function TechStack({ props }) {
 	const TECH_STACK_LIST = [
 		{
 			icon: <SiReact {...props} />,
-			name: "React",
+			name: "React 18",
 		},
 		{
 			icon: <SiJavascript {...props} />,
-			name: "JavaScript",
+			name: "JavaScript (ES6+)",
+		},
+		{
+			icon: <SiRedux {...props} />,
+			name: "Redux (Toolkit)",
 		},
 		{
 			icon: <SiBootstrap {...props} />,
-			name: "Bootstrap",
+			name: "Bootstrap 5",
 		},
 		{
 			icon: <SiReactrouter {...props} />,
-			name: "React Router",
+			name: "React Router 6",
 		},
 		{
 			icon: <SiFirebase {...props} />,
-			name: "Firebase",
+			name: "Firebase 9",
 		},
 		{
 			icon: <SiCss3 {...props} />,
-			name: "CSS",
+			name: "CSS3",
 		},
 		{
 			icon: <SiHtml5 {...props} />,
-			name: "HTML",
+			name: "HTML5",
 		},
 		{
 			icon: <SiStyledcomponents {...props} />,
 			name: "Styled Components",
 		},
 		// {
+		// 	icon: <SiMarkdown {...props} />,
+		// 	name: "Markdown",
+		// },
+		// {
 		//   icon: <SiSass {...props} />,
 		//   name: "Sass"
 		// },
 		// {
-		//   icon: <SiJquery {...props} />,
-		//   name: "jQuery"
-		// }
+		// 	icon: <SiJquery {...props} />,
+		// 	name: "jQuery",
+		// },
 		// {
 		//   icon: <SiVisualstudiocode {...props} />,
 		//   name: "Visual Studio Code"
