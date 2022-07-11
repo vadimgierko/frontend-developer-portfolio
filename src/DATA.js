@@ -55,6 +55,22 @@ export const DATA = {
 	},
 	projects: [
 		{
+			name: "Dev Portfolio",
+			img: "img/dev-portfolio-react-bootstrap-screen-vadim-gierko.png",
+			gp: "https://vadimgierko.github.io/frontend-developer-portfolio",
+			repoUrl: "https://github.com/vadimgierko/frontend-developer-portfolio",
+			techStack: [
+				"react",
+				"react-bootstrap",
+				"bootstrap",
+				"react-icons",
+				"gh-pages",
+			],
+			features: ["rwd", "dark mode"],
+			shortDescription:
+				"Developer portfolio designed & developed by myself using React Bootstrap components for styling.",
+		},
+		{
 			name: "Linky Notes",
 			img: "img/linky-notes-app-vadim-gierko.png",
 			gp: "https://vadimgierko.github.io/linky-notes/",
@@ -67,7 +83,14 @@ export const DATA = {
 				"bootstrap-icons",
 				"gh-pages",
 			],
-			features: ["crud", "database", "routing", "users authentication", "rwd"],
+			features: [
+				"crud",
+				"database",
+				"routing",
+				"users authentication",
+				"rwd",
+				"dark mode",
+			],
 			shortDescription:
 				"Organize & filter your notes with tags & create your own knowledge base!",
 			description:
@@ -223,7 +246,7 @@ export const DATA = {
 				link: "https://github.com/vadimgierko",
 			},
 			{
-				label: "[see the code]",
+				label: "[source code]",
 				link: "https://github.com/vadimgierko/frontend-developer-portfolio",
 			},
 			// {

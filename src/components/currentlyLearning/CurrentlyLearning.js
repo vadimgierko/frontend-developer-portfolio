@@ -5,7 +5,6 @@ import {
 	SiExpress,
 	SiNodedotjs,
 	SiHeroku,
-	SiMaterialui,
 	SiGatsby,
 } from "react-icons/si";
 
@@ -27,10 +26,6 @@ export default function CurrentlyLearning({ props }) {
 		{
 			icon: <SiHeroku {...props} />,
 			name: "Heroku",
-		},
-		{
-			icon: <SiMaterialui {...props} />,
-			name: "MUI",
 		},
 		{
 			icon: <SiGatsby {...props} />,

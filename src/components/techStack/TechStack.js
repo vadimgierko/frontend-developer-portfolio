@@ -10,6 +10,7 @@ import {
 	SiHtml5,
 	SiCss3,
 	SiStyledcomponents,
+	SiMaterialui,
 	SiMarkdown,
 	SiSass,
 	SiJquery,
@@ -43,6 +44,10 @@ export default function TechStack({ props }) {
 		{
 			icon: <SiFirebase {...props} />,
 			name: "Firebase 9",
+		},
+		{
+			icon: <SiMaterialui {...props} />,
+			name: "MaterialUI",
 		},
 		{
 			icon: <SiCss3 {...props} />,
