@@ -125,6 +125,32 @@ export const DATA = {
 				"This full-stack SPA allows you to create & run your blog (or many blogs) for free after creating a free user account, write & edit your articles with simple & intuitive markdown text editor (which was also created by myself) & read published blogs without authentication. There is a small blog called 'My Programming Journey', where I published a few articles. This app & linky_notes app (see above) are my newest, most complex & advanced responsive full-stack single-page real-world applications, that support all kinds of CRUD features, in which I have used all of my previous knowledge and skills in the field of front-end development (React, React Router, Bootstrap) and realtime database & authentication integration (Firebase).",
 		},
 		{
+			name: "React Redux Firebase CRUD App template styled with MUI",
+			img: "img/react-redux-firebase-mui-crud-app-screen-vadim-gierko.png",
+			gp: "https://vadimgierko.github.io/react-redux-router-firebase-auth-rtdb-crud-mui-app/",
+			repoUrl:
+				"https://github.com/vadimgierko/react-redux-router-firebase-auth-rtdb-crud-mui-app",
+			techStack: [
+				"react",
+				"react-router",
+				"redux toolkit",
+				"firebase",
+				"mui",
+				"mui-icons",
+				"gh-pages",
+			],
+			features: [
+				"crud",
+				"database",
+				"routing",
+				"users authentication",
+				"rwd",
+				"dark mode",
+			],
+			shortDescription:
+				"The template starter for quickly start a new fullstack app with Redux Toolkit & MUI!",
+		},
+		{
 			name: "GitHub API Users Search App",
 			img: "img/github-user-search-app-screen-vadim-gierko.png",
 			gp: "https://vadimgierko.github.io/github-api-users-search-app/#/vadimgierko",
